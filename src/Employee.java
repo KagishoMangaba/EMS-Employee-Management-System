@@ -37,4 +37,21 @@ public class Employee {
         System.out.println("Leave Days: " + leaveDays);
         System.out.println("Email: " + email);
     }
+
+    protected double performanceRating;
+    protected String lastReviewDate;
+    protected boolean isActive;
+    protected String startDate;
+    protected String contractType;
+
+    // Method to calculate annual bonus based on performance
+    public double calculateBonus() {
+        double bonusPercentage = 0;
+        if (performanceRating >= 4.5) bonusPercentage = 0.15; // 15% bonus
+        else if (performanceRating >= 4.0) bonusPercentage = 0.10; // 10% bonus
+        else if (performanceRating >= 3.5) bonusPercentage = 0.05; // 5% bonus
+
+        return baseSalary * bonusPercentage;
+
+    }
 }
