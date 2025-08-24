@@ -7,8 +7,7 @@
     <list default="true" id="b5e6ff35-3f65-4b59-a984-1fb039ce5cdd" name="Changes" comment="i used arrays to store the employees">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SeniorDeveloper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SeniorDeveloper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="204341e9-8f81-4951-b772-5657fc6b9071" />
-        <option name="url" value="https://github.com/KagishoMangaba/EMS-Employee-Management-System-" />
+        <option name="url" value="https://github.com/KagishoMangaba/EMS-Employee-Management-System.git" />
       </UrlAndAccount>
     </option>
   </component>

@@ -50,6 +50,7 @@ public class Employee {
         if (performanceRating >= 4.5) bonusPercentage = 0.15; // 15% bonus
         else if (performanceRating >= 4.0) bonusPercentage = 0.10; // 10% bonus
         else if (performanceRating >= 3.5) bonusPercentage = 0.05; // 5% bonus
+        
 
         return baseSalary * bonusPercentage;
 
