@@ -13,6 +13,9 @@ public class Main {
             e.printDetails();
             e.getSalary();
             System.out.println("-------------------");
+
         }
+
+
     }
 }

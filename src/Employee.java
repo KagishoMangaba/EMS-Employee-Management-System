@@ -2,14 +2,14 @@
 
 public class Employee {
 
-    String name;
-    long id;             // changed to long for SA ID
-    int age;
-    String department;
-    String position;
-    double baseSalary;
-    int leaveDays;
-    String email;
+    protected String name;
+    protected long id;
+    protected int age;
+    protected String department;
+    protected double baseSalary;
+    protected int leaveDays;
+    protected String email;
+    protected String position;
 
     Employee(String name, long id, int age, String department, double baseSalary,
              int leaveDays, String email) {
