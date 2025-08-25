@@ -14,7 +14,25 @@ public class Intern extends Employee{
 
 
         this.University = University;
+        this.DegreeProgram = DegreeProgram;
+        this.internshipDurationMonths = internshipDurationMonths;
+        this.performanceRating = performanceScore;
 
+
+
+    }
+
+    private String getUniversity(){
+        return University;
+    }
+    private String getDegreeProgram(){
+        return DegreeProgram;
+    }
+    private String getInternshipDurationMonths(){
+        return internshipDurationMonths;
+    }
+    private double getPerformanceScore(){
+        return performanceScore;
     }
 
 }
