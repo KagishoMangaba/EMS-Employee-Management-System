@@ -8,7 +8,7 @@ public class Intern extends Employee{
 
 
     Intern(String name, long id, int age, String department, double baseSalary,
-           int leaveDays, String email , String University) {
+           int leaveDays, String email , String University , String DegreeProgram , String internshipDurationMonths , double performanceScore) {
 
         super(name, id, age, department, baseSalary, leaveDays, email);
 
@@ -33,6 +33,15 @@ public class Intern extends Employee{
     }
     private double getPerformanceScore(){
         return performanceScore;
+    }
+
+    public void evaluatePerformance(int performanceScore) {
+        if(performanceScore >=80)
+            System.out.println("Intern is elegible for a return offer");
+        else {
+            System.out.println("Pending...");
+        }
+
     }
 
 }

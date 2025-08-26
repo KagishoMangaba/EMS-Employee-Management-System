@@ -1,17 +1,18 @@
 public class SeniorDeveloper extends Employee {
+    private int completedProjects;
 
-    private String BonusMultiplier;
-
-
-    public SeniorDeveloper(String name, long id, int age, String department,
-                           double baseSalary, int leaveDays, String email, String bonusMultiplier) {
-
-        super(name, id, age, department, baseSalary, leaveDays, email);
-
-        this.BonusMultiplier = bonusMultiplier;
+    public SeniorDeveloper(String name, int yearsOfService, double salary, int completedProjects) {
+        super(name, yearsOfService, salary);
+        this.completedProjects = completedProjects;
     }
 
+    // New method: calculate project bonus
+    public double calculateProjectBonus() {
+        double bonus = 0;
+        if (completedProjects >= 10) {
+            bonus = getSalary() * 0.15; // 15% bonus for 10+ projects
+        } else if (completedProjects >= 5) {
+            bonus = getSalary() * 0.08; // 8% bonus for 5-9 projects
+        }
 
 
-
-}
