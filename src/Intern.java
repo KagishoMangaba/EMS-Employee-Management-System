@@ -4,6 +4,9 @@ public class Intern extends Employee{
     private String DegreeProgram;
     private String internshipDurationMonths;
     private double performanceScore;
+    private double LearningPerformace1;
+
+
 
 
 
