@@ -4,14 +4,16 @@ public class Intern extends Employee{
     private String DegreeProgram;
     private String internshipDurationMonths;
     private double performanceScore;
-    private double LearningPerformace1;
+    private int learnerLevel;
+    private int learningBonus;
 
 
 
 
 
     Intern(String name, long id, int age, String department, double baseSalary,
-           int leaveDays, String email , String University , String DegreeProgram , String internshipDurationMonths , double performanceScore) {
+           int leaveDays, String email , String University , String DegreeProgram , String internshipDurationMonths , double performanceScore,
+    String learnerlevel , int learningBonus) {
 
         super(name, id, age, department, baseSalary, leaveDays, email);
 
@@ -20,21 +22,30 @@ public class Intern extends Employee{
         this.DegreeProgram = DegreeProgram;
         this.internshipDurationMonths = internshipDurationMonths;
         this.performanceRating = performanceScore;
+        this.performanceScore = performanceScore;
+
+        if(learnerLevel == 1) {
+            this.learningBonus = 500;
+
+        }else if(learnerLevel ==  2 ) {
+            this.learningBonus = 1000;
+        }else if(learnerLevel == 3);
+            this.learningBonus = 2000;
 
 
 
     }
 
-    private String getUniversity(){
+     String getUniversity(){
         return University;
     }
-    private String getDegreeProgram(){
+     String getDegreeProgram(){
         return DegreeProgram;
     }
-    private String getInternshipDurationMonths(){
+     String getInternshipDurationMonths(){
         return internshipDurationMonths;
     }
-    private double getPerformanceScore(){
+     double getPerformanceScore(){
         return performanceScore;
     }
 

@@ -1,6 +1,5 @@
-public class Manager extends Employee  {
+public class Manager  {
 
-    private
 
 
 }
