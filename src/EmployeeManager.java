@@ -46,7 +46,8 @@ public class EmployeeManager {
         employees.add(new Intern("Amanda Molefe", 9703340004L, 21, "HR", 4800, 4,
                 "amanda@email.com", "Wits University", "Psychology", "12", 91, 3));
 
-        employees.add(new SeniorDeveloper("Sibongile Mkhize", 9501010001L, 28, "IT", 12000, 15, "sbongile@email.com", new String[]{"Java","Spring Boot","SQL"}, 6 , new String[]{"Employee Management System","RapidBite"}));
+        employees.add(new SeniorDeveloper("Luyanda Nene", 9501010001L, 25, "IT(QA)", 67600, 15, "LuyandaNene@email.com", new String[]{"Java","Spring Boot","SQL"}, 6 , new String[]{"Login & Authentication Testing", "Payment Gateway Testing", "User Profile Management", "Shopping Cart Functionality", "Notification System QA"}));
+
 
     }
 

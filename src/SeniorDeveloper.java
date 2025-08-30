@@ -1,24 +1,45 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class SeniorDeveloper extends Employee {
 
     private String[] programmingLanguages;
     private int YearsOfExperience;
-    private String[] projectsAssigned;
+    private List<String> projectsAssigned;
+    private List<Employee> mentees;
 
     public SeniorDeveloper(String name, long id, int age, String department, double baseSalary,
-                  int leaveDays, String email , String[] programmingLanguages , int YearsOfExperience , String[] projectsAssigned ) {
+                           int leaveDays, String email, String[] programmingLanguages, int YearsOfExperience, String[] projectsAssigned) {
 
-        super(name, id, age, department, baseSalary, leaveDays, email );
+        super(name, id, age, department, baseSalary, leaveDays, email);
 
         this.programmingLanguages = programmingLanguages;
         this.YearsOfExperience = YearsOfExperience;
-        this.projectsAssigned = projectsAssigned;
+        this.projectsAssigned = new ArrayList<>();
 
+
+
+
+
+
+
+
+    }
+
+    void AssignProject(String project) {
+
+        AssignProject();
 
 
     }
 
 
 }
+
+
+
+
+
 
 
 
