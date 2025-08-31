@@ -1,3 +1,8 @@
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+
 public class Intern extends Employee {
 
     private String university;
@@ -19,16 +24,20 @@ public class Intern extends Employee {
         this.internshipDurationMonths = internshipDurationMonths;
         this.performanceScore = performanceScore;
         this.learningLevel = learningLevel;
+        this.learningBonus = getBonusFromFile(learningLevel);
 
         // Assign bonus based on level
-        if (learningLevel == 1) {
-            this.learningBonus = 500;
-        } else if (learningLevel == 2) {
-            this.learningBonus = 1000;
-        } else if (learningLevel == 3) {
-            this.learningBonus = 2000;
-        } else {
-            this.learningBonus = 0; // default for invalid levels
+
+    }
+
+    private int getBonusFromFile(int level) {
+        Properties props = new Properties();
+        try (FileInputStream fis = new FileInputStream("learnerbonus.properties")) {
+            props.load(fis);
+            return Integer.parseInt(props.getProperty("level" + level, "0"));
+        } catch (IOException e) {
+            e.printStackTrace();
+            return 0;
         }
     }
 
