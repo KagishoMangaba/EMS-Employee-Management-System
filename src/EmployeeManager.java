@@ -6,7 +6,9 @@ public class EmployeeManager {
 
     public EmployeeManager() {
         employees = new ArrayList<>();
-        addAllInterns(); // add all interns on creation
+        addAllInterns();
+        addAllJuniorDevelopers();
+
     }
 
     // Add any employee
@@ -49,8 +51,34 @@ public class EmployeeManager {
         employees.add(new SeniorDeveloper("Luyanda Nene", 9501010001L, 25, "IT(QA)", 67600, 15, "LuyandaNene@email.com", new String[]{"Java","Spring Boot","SQL"}, 6 , new String[]{"Login & Authentication Testing", "Payment Gateway Testing", "User Profile Management", "Shopping Cart Functionality", "Notification System QA"}));
 
 
+
     }
 
-    // Display all employees
 
-}
+        private void addAllJuniorDevelopers() {
+            employees.add(new JuniorDeveloper("Junior01_Lerato", 9707070001L, 22, "IT", 5200, 5,
+                    "lerato@email.com", "Senior01_Luyanda", "Login Module"));
+            employees.add(new JuniorDeveloper("Junior02_Naledi", 9505010002L, 23, "Finance", 5300, 5,
+                    "naledi@email.com", "Senior02_Sipho", "Accounting App"));
+            employees.add(new JuniorDeveloper("Junior03_Kagisho", 9910110003L, 21, "IT", 5000, 5,
+                    "kagisho@email.com", "Senior03_Amanda", "E-Commerce Backend"));
+            employees.add(new JuniorDeveloper("Junior04_Thabo", 9802150004L, 22, "HR", 4800, 4,
+                    "thabo@email.com", "Senior04_Mpho", "Employee Management System"));
+            employees.add(new JuniorDeveloper("Junior05_Siphiwe", 9903230005L, 22, "Marketing", 4600, 5,
+                    "siphiwe@email.com", "Senior05_Luyanda", "Marketing Analytics"));
+            employees.add(new JuniorDeveloper("Junior06_Zinhle", 9901010006L, 23, "Finance", 5100, 5,
+                    "zinhle@email.com", "Senior06_Sipho", "Budget Tracker"));
+            employees.add(new JuniorDeveloper("Junior07_Thulani", 9606100007L, 22, "IT", 5000, 5,
+                    "thulani@email.com", "Senior07_Amanda", "Website Login System"));
+            employees.add(new JuniorDeveloper("Junior08_Amanda", 9703340008L, 21, "HR", 4800, 4,
+                    "amanda@email.com", "Senior08_Mpho", "Recruitment Tracker"));
+            employees.add(new JuniorDeveloper("Junior09_Lerato", 9707070009L, 23, "IT", 5200, 5,
+                    "lerato2@email.com", "Senior09_Luyanda", "Inventory System"));
+            employees.add(new JuniorDeveloper("Junior10_Naledi", 9505010010L, 22, "Finance", 5300, 5,
+                    "naledi2@email.com", "Senior10_Sipho", "Accounting Dashboard"));
+        }
+
+    }
+
+
+    // Display all employees

@@ -1,16 +1,18 @@
 public class Main {
     public static void main(String[] args) {
+        // Create EmployeeManager and populate with interns, juniors, and seniors
+        EmployeeManager manager = new EmployeeManager();
 
+        System.out.println("=== ALL EMPLOYEES ===");
+        manager.displayAllEmployees();  // Polymorphism ensures each class prints correctly
 
-//
-//        public void displayAllEmployees() {
-//            for (Employee e : employees) {
-//                e.printDetails();
-//                if (e instanceof Intern) {
-//                    ((Intern) e).evaluatePerformance(); // evaluate interns
-//                }
-//                System.out.println("----------------------");
-//            }
-//        }
+        System.out.println("\n=== ONLY JUNIOR DEVELOPERS ===");
+        manager.displayByType(JuniorDeveloper.class);
+
+        System.out.println("\n=== ONLY SENIOR DEVELOPERS ===");
+        manager.displayByType(SeniorDeveloper.class);
+
+        System.out.println("\n=== ONLY INTERNS ===");
+        manager.displayByType(Intern.class);
     }
 }
