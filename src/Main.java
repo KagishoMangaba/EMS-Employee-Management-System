@@ -1,18 +1,34 @@
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Create EmployeeManager and populate with interns, juniors, and seniors
         EmployeeManager manager = new EmployeeManager();
+        PayrollService payroll = new PayrollService();
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("=== ALL EMPLOYEES ===");
-        manager.displayAllEmployees();  // Polymorphism ensures each class prints correctly
+        System.out.println("Select payroll type:");
+        System.out.println("1 - All Employees");
+        System.out.println("2 - Interns");
+        System.out.println("3 - Junior Developers");
+        System.out.println("4 - Senior Developers");
+        int choice = sc.nextInt();
 
-        System.out.println("\n=== ONLY JUNIOR DEVELOPERS ===");
-        manager.displayByType(JuniorDeveloper.class);
+        List<Employee> selectedEmployees = null;
 
-        System.out.println("\n=== ONLY SENIOR DEVELOPERS ===");
-        manager.displayByType(SeniorDeveloper.class);
+        switch (choice) {
+            case 1 -> manager.displayAllEmployees();
+            case 2 -> selectedEmployees = manager.getEmployeesByType(Intern.class);
+            case 3 -> selectedEmployees = manager.getEmployeesByType(JuniorDeveloper.class);
+            case 4 -> selectedEmployees = manager.getEmployeesByType(SeniorDeveloper.class);
+            default -> {
+                System.out.println("Invalid choice! Defaulting to all employees.");
+                manager.displayAllEmployees();
+            }
+        }
 
-        System.out.println("\n=== ONLY INTERNS ===");
-        manager.displayByType(Intern.class);
+        payroll.printPayroll(selectedEmployees);
+        sc.close();
     }
+
 }

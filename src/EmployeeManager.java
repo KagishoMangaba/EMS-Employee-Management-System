@@ -80,4 +80,15 @@ public class EmployeeManager {
         employees.add(new JuniorDeveloper("Junior10_Naledi", 9505010010L, 22, "Finance", 5300, 5,
                 "naledi2@email.com", "Senior10_Sipho", "Accounting Dashboard"));
     }
+
+    public List<Employee> getEmployeesByType(Class<?> type) {
+        List<Employee> filtered = new ArrayList<>();
+        for (Employee e : employees) {
+            if (type.isInstance(e)) {
+                filtered.add(e);
+            }
+        }
+        return filtered;
+    }
+
 }

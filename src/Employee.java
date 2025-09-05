@@ -55,4 +55,8 @@ public class Employee {
         return baseSalary * bonusPercentage;
 
     }
+
+    public double calculateTotalSalary() {
+        return baseSalary + calculateBonus();
+    }
 }
