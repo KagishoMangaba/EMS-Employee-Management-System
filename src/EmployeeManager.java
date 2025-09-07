@@ -91,4 +91,30 @@ public class EmployeeManager {
         return filtered;
     }
 
+    // Returns all employees as a list
+    public List<Employee> getAllEmployees() {
+        return employees;
+    }
+
+    public Employee findById(long id) {
+        for (Employee emp : employees) {
+            if (emp.getId() == id) {
+                return emp;
+            }
+        }
+        return null; // not found
+    }
+
+    public List<Employee> findByDepartment(String department) {
+        List<Employee> result = new ArrayList<>();
+        for (Employee emp : employees) {
+            if (emp.getDepartment().equalsIgnoreCase(department)) {
+                result.add(emp);
+            }
+        }
+        return result;
+    }
+
+
+
 }

@@ -14,21 +14,22 @@ public class Main {
         System.out.println("4 - Senior Developers");
         int choice = sc.nextInt();
 
-        List<Employee> selectedEmployees = null;
+        List<Employee> selectedEmployees;
 
         switch (choice) {
-            case 1 -> manager.displayAllEmployees();
+            case 1 -> selectedEmployees = manager.getAllEmployees();
             case 2 -> selectedEmployees = manager.getEmployeesByType(Intern.class);
             case 3 -> selectedEmployees = manager.getEmployeesByType(JuniorDeveloper.class);
             case 4 -> selectedEmployees = manager.getEmployeesByType(SeniorDeveloper.class);
             default -> {
                 System.out.println("Invalid choice! Defaulting to all employees.");
-                manager.displayAllEmployees();
+                selectedEmployees = manager.getAllEmployees();
             }
         }
 
         payroll.printPayroll(selectedEmployees);
         sc.close();
     }
+
 
 }
