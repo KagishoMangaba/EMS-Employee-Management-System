@@ -12,9 +12,9 @@ public class SeniorDeveloper extends Employee {
 
     // Constructor
     public SeniorDeveloper(String name, long id, int age, String department, double baseSalary,
-                           int leaveDays, String email, String[] programmingLanguages, int yearsOfExperience, String[] initialProjects) {
+                           int leaveDays, String email, String birthdate , String[] programmingLanguages, int yearsOfExperience, String[] initialProjects) {
 
-        super(name, id, age, department, baseSalary, leaveDays, email);
+        super(name, id, age, department, baseSalary, leaveDays, email , birthdate);
 
         this.programmingLanguages = programmingLanguages;
         this.yearsOfExperience = yearsOfExperience;
@@ -54,7 +54,7 @@ public class SeniorDeveloper extends Employee {
     }
 
 
-}
+
 
 
 

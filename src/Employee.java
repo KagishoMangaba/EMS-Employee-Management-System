@@ -1,26 +1,39 @@
-
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
 
 public class Employee {
 
     protected String name;
     protected long id;
-    protected int age;
+
     protected String department;
     protected double baseSalary;
     protected int leaveDays;
     protected String email;
     protected String position;
+    private LocalDate birthDate;
 
-    Employee(String name, long id, int age, String department, double baseSalary,
-             int leaveDays, String email) {
+    Employee(String name, long id, String department, double baseSalary,
+             int leaveDays, String email , String birthDate) {
         this.name = name;
         this.id = id;
-        this.age = age;
         this.department = department;
         this.baseSalary = baseSalary;
         this.leaveDays = leaveDays;
         this.email = email;
         this.position = "Employee"; // default, can be overridden in subclass
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        this.birthDate = LocalDate.parse(birthDate, formatter);
+    }
+    public int getAge() {
+        return Period.between(this.birthDate, LocalDate.now()).getYears();
+    }
+
+    // ✅ Get birthday in same format
+    public String getBirthday() {
+        return birthDate.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
     }
 
     void getSalary() {
@@ -30,7 +43,6 @@ public class Employee {
     void printDetails() {
         System.out.println("Name: " + name);
         System.out.println("ID: " + id);
-        System.out.println("Age: " + age);
         System.out.println("Department: " + department);
         System.out.println("Position: " + position);
         System.out.println("Salary: R" + baseSalary);

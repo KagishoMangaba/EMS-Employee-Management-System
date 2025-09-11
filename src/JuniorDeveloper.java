@@ -7,10 +7,10 @@ public class JuniorDeveloper extends Employee {
 
 
     public JuniorDeveloper(String name, long id, int age, String department,
-                           double baseSalary, int leaveDays, String email,
+                           double baseSalary, int leaveDays, String email, String birthdate ,
                            String mentor, String projectAssigned) {
 
-        super(name, id, age, department, baseSalary, leaveDays, email);
+        super(name, id, age, department, baseSalary, leaveDays, email , birthdate);
 
         // Set junior-specific fields
         this.mentor = mentor;

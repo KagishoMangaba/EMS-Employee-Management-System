@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b5e6ff35-3f65-4b59-a984-1fb039ce5cdd" name="Changes" comment="i used arrays to store the employees">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PayrollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PayrollService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EmployeeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JuniorDeveloper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuniorDeveloper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reportable.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SeniorDeveloper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SeniorDeveloper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

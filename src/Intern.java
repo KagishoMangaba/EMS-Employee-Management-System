@@ -14,10 +14,10 @@ public class Intern extends Employee {
 
     // Constructor
     public Intern(String name, long id, int age, String department, double baseSalary,
-                  int leaveDays, String email, String university, String degreeProgram,
+                  int leaveDays, String email, String birthdate ,  String university, String degreeProgram,
                   String internshipDurationMonths, double performanceScore, int learningLevel) {
 
-        super(name, id, age, department, baseSalary, leaveDays, email);
+        super(name, id, age, department, baseSalary, leaveDays, email , birthdate );
 
         this.university = university;
         this.degreeProgram = degreeProgram;

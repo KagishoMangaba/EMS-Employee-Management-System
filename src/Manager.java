@@ -5,10 +5,10 @@ public class Manager extends Employee {
 
     // === Constructor ===
     public Manager(String name, long id, int age, String department, double baseSalary,
-                   int leaveDays, String email, String startDate, String contractType,
+                   int leaveDays, String email, String birthdate , String startDate, String contractType,
                    int teamSize, double allowance) {
 
-        super(name, id, age, department, baseSalary, leaveDays, email);
+        super(name, id, age, department, baseSalary, leaveDays, email , birthdate);
         this.position = "Manager"; // overrides default Employee position
         this.teamSize = teamSize;
         this.allowance = allowance;
