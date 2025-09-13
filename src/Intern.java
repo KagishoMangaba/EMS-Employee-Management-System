@@ -17,7 +17,7 @@ public class Intern extends Employee {
                   int leaveDays, String email, String birthdate ,  String university, String degreeProgram,
                   String internshipDurationMonths, double performanceScore, int learningLevel) {
 
-        super(name, id, age, department, baseSalary, leaveDays, email , birthdate );
+        super(name, id, department, baseSalary, leaveDays, email , birthdate );
 
         this.university = university;
         this.degreeProgram = degreeProgram;

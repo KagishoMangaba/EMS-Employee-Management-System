@@ -8,7 +8,7 @@ public class Manager extends Employee {
                    int leaveDays, String email, String birthdate , String startDate, String contractType,
                    int teamSize, double allowance) {
 
-        super(name, id, age, department, baseSalary, leaveDays, email , birthdate);
+        super(name, id, department, baseSalary, leaveDays, email , birthdate);
         this.position = "Manager"; // overrides default Employee position
         this.teamSize = teamSize;
         this.allowance = allowance;

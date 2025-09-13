@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5e6ff35-3f65-4b59-a984-1fb039ce5cdd" name="Changes" comment="i used arrays to store the employees" />
+    <list default="true" id="b5e6ff35-3f65-4b59-a984-1fb039ce5cdd" name="Changes" comment="i used arrays to store the employees">
+      <change beforePath="$PROJECT_DIR$/src/EmployeeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
